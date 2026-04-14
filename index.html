@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Test My Voice Range Free | Discover Your True Singing Ability</title>
+  <!-- Google Fonts: Premium Modern -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #FBF9F5;
+      color: #1C1A17;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Premium Container with generous left spacing */
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 60px 0 80px;
+    }
+
+    @media (max-width: 1100px) {
+      .container {
+        padding: 0 40px 0 56px;
+      }
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 24px 0 28px;
+      }
+    }
+
+    /* ========== HEADER ========== */
+    .site-header {
+      background: #FFFFFF;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.02);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      gap: 20px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .logo-main {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #C85C2A, #E98C47);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .logo-badge {
+      background: #EFE5DB;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 5px 14px;
+      border-radius: 40px;
+      color: #B45528;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 38px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2C2823;
+      font-size: 0.95rem;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #D46B32;
+    }
+
+    .nav-btn {
+      background: #1F1C18;
+      color: white !important;
+      padding: 8px 26px;
+      border-radius: 40px;
+      font-weight: 600;
+    }
+
+    .nav-btn:hover {
+      background: #D46B32;
+      transform: translateY(-1px);
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      padding: 80px 0 56px 0;
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .hero-left {
+      flex: 1.2;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: #F1E8DF;
+      padding: 6px 18px;
+      border-radius: 60px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #D56F38;
+      margin-bottom: 28px;
+    }
+
+    .hero-left h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+      color: #1C1814;
+    }
+
+    .accent {
+      color: #E17B3A;
+    }
+
+    .hero-desc {
+      font-size: 1.08rem;
+      color: #4F4840;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 42px;
+      margin: 36px 0 20px;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #E17B3A;
+    }
+
+    .hero-right {
+      flex: 0.9;
+      background: linear-gradient(135deg, #FCF3EA, #FEEBDC);
+      border-radius: 56px;
+      padding: 45px 32px;
+      text-align: center;
+      box-shadow: 0 28px 42px -14px rgba(0,0,0,0.06);
+    }
+
+    .hero-right i {
+      font-size: 110px;
+      color: #DD7840;
+      opacity: 0.85;
+    }
+
+    /* First Link inline style (no button) */
+    .first-link {
+      font-weight: 700;
+      color: #D4642C;
+      border-bottom: 2px solid rgba(212,100,44,0.3);
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .first-link:hover {
+      color: #AD4C1C;
+      border-bottom-color: #AD4C1C;
+    }
+
+    /* ========== PROFESSIONAL CARDS ========== */
+    .pro-card {
+      background: #FFFFFF;
+      border-radius: 48px;
+      padding: 56px 56px;
+      margin: 56px 0;
+      box-shadow: 0 14px 32px rgba(0,0,0,0.02);
+      border: 1px solid #F0E6DD;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 30px;
+      color: #26211C;
+      border-left: 6px solid #E17B3A;
+      padding-left: 26px;
+    }
+
+    .subheading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 32px 0 16px 0;
+      color: #2C241E;
+    }
+
+    /* Step Grid */
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      margin: 48px 0 28px;
+    }
+
+    .step-card {
+      background: #FEFAF6;
+      border-radius: 36px;
+      padding: 28px 20px;
+      text-align: center;
+      border: 1px solid #F2E6DC;
+    }
+
+    .step-number {
+      background: #E17B3A;
+      width: 56px;
+      height: 56px;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.7rem;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    /* Table */
+    .vocal-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #FEFAF6;
+      border-radius: 32px;
+      overflow: hidden;
+      margin: 38px 0;
+    }
+
+    .vocal-table th {
+      background: #26201B;
+      color: #FCF1E6;
+      padding: 18px 16px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .vocal-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #EFE2D6;
+      color: #3C342C;
+    }
+
+    /* Badges */
+    .badge-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 32px 0;
+    }
+
+    .mistake-badge, .benefit-badge {
+      background: #FEF5ED;
+      padding: 12px 26px;
+      border-radius: 100px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    /* Second Link Module (relevant anchor, no button) */
+    .second-link-module {
+      background: #FEF3EA;
+      border-radius: 40px;
+      padding: 32px 44px;
+      margin-top: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .second-link-text {
+      font-weight: 600;
+      color: #2C241E;
+      font-size: 1rem;
+    }
+
+    .second-anchor {
+      font-weight: 700;
+      background: #FFFFFF;
+      padding: 14px 34px;
+      border-radius: 60px;
+      text-decoration: none;
+      color: #E17B3A;
+      transition: 0.2s;
+      border: 1px solid #E2CDBB;
+      display: inline-block;
+    }
+
+    .second-anchor:hover {
+      background: #E17B3A;
+      color: white;
+      border-color: #E17B3A;
+      transform: translateY(-2px);
+    }
+
+    .pro-card ul, .pro-card ol {
+      padding-left: 28px;
+      margin: 22px 0;
+    }
+
+    .pro-card li {
+      margin-bottom: 12px;
+    }
+
+    .pro-card p {
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      background: #141210;
+      color: #D6CABA;
+      padding: 64px 0 36px;
+      margin-top: 72px;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 54px;
+    }
+
+    .footer-brand h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.7rem;
+      color: #EFDCC8;
+      margin-bottom: 14px;
+    }
+
+    .footer-links-group {
+      display: flex;
+      gap: 74px;
+    }
+
+    .footer-links-group a {
+      display: block;
+      color: #CBB699;
+      text-decoration: none;
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+
+    .footer-links-group a:hover {
+      color: #E88C4A;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 54px;
+      padding-top: 32px;
+      border-top: 1px solid #2D2620;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 880px) {
+      .pro-card {
+        padding: 36px 28px;
+      }
+      .hero-left h1 {
+        font-size: 2.5rem;
+      }
+      .header-inner {
+        flex-direction: column;
+      }
+      .hero-stats {
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-area">
+      <span class="logo-main">VoiceRangeFree</span>
+      <span class="logo-badge">TEST YOUR VOICE</span>
+    </div>
+    <div class="nav-links">
+      <a href="#what-is">What Is It</a>
+      <a href="#guide">Guide</a>
+      <a href="#vocal-types">Vocal Types</a>
+      <a href="#improve" class="nav-btn">Test Free Now</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-tag"><i class="fas fa-microphone-alt"></i> FREE VOICE ANALYSIS</div>
+        <h1>Test My Voice Range Free:<br><span class="accent">Discover Your True Singing Ability Online</span></h1>
+        <p class="hero-desc">Every voice carries a unique sound, but most people never truly understand what their voice is capable of. You might enjoy singing, humming along to music, or trying your favorite songs, yet still feel unsure about your real vocal ability.</p>
+        <!-- FIRST LINK inline inside intro paragraph (no button) -->
+        <p class="hero-desc">🎤 Start your journey with a professional <a href="https://vocalrangetest.com/" target="_blank" rel="noopener noreferrer" class="first-link"><strong>test my voice range free</strong></a> — instant pitch detection and full vocal mapping from home. No studio or payment required.</p>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-number">8+</span><span>Vocal Types</span></div>
+          <div class="stat-item"><span class="stat-number">2M+</span><span>Voices Analyzed</span></div>
+          <div class="stat-item"><span class="stat-number">100%</span><span>Free Access</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <i class="fas fa-head-side-vr"></i>
+        <i class="fas fa-waveform" style="font-size: 44px; margin-top: 24px; display: block; color: #C96F3A;"></i>
+        <p style="margin-top: 24px; font-weight: 500;">Real-time voice range analyzer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- What Does Test My Voice Range Free Mean -->
+    <div class="pro-card" id="what-is">
+      <h2 class="section-title">What Does "Test My Voice Range Free" Mean?</h2>
+      <p>"Test my voice range free" refers to an online or manual method that allows you to discover the lowest and highest notes your voice can produce comfortably without paying anything. It is a beginner-friendly way to analyze your singing ability using simple tools like virtual piano notes, pitch detection systems, or guided exercises.</p>
+      <p>The focus of this test is not about pushing your voice to extreme limits. Instead, it is about identifying your natural vocal zone—the range where your voice sounds stable, clear, and controlled.</p>
+      <p>Every person has a different voice structure, so this test helps you understand your personal singing identity instead of comparing yourself with others.</p>
+      <div style="background: #FEF3EA; border-radius: 28px; padding: 24px; margin-top: 36px;"><i class="fas fa-chart-line"></i> <strong>Pro tip:</strong> Knowing your vocal range helps you choose songs that fit perfectly and prevents vocal strain.</div>
+    </div>
+
+    <!-- Why It's Important + How It Works -->
+    <div class="pro-card" id="guide">
+      <h2 class="section-title">Why You Should Test Your Voice Range for Free</h2>
+      <p>Many singers struggle simply because they don't know their vocal boundaries. They try to sing songs that are too high or too low, which leads to discomfort, voice cracks, and lack of confidence.</p>
+      <p>When you test your voice range free, you gain clarity about your natural ability. This helps you choose songs that actually match your voice, making your singing sound smoother and more professional. It also helps protect your vocal health — singing outside your natural range repeatedly can cause strain on your vocal cords.</p>
+      
+      <h3 class="subheading">How a Free Voice Range Test Works</h3>
+      <p>A free voice range test usually starts with a comfortable middle note that most people can sing easily. From there, the process moves step by step in two directions. First, it moves downward to find your lowest note. Then it moves upward to find your highest note. Some advanced free tools use microphone-based pitch detection, which listens to your voice and automatically calculates your range in real time.</p>
+      
+      <div class="step-grid">
+        <div class="step-card"><div class="step-number">1</div><strong>Quiet environment</strong><br>No background noise</div>
+        <div class="step-card"><div class="step-number">2</div><strong>Warm up voice</strong><br>Humming & soft exercises</div>
+        <div class="step-card"><div class="step-number">3</div><strong>Relaxed posture</strong><br>Sit or stand comfortably</div>
+        <div class="step-card"><div class="step-number">4</div><strong>Start middle note</strong><br>Comfortable pitch</div>
+        <div class="step-card"><div class="step-number">5</div><strong>Move downward</strong><br>Until voice becomes weak</div>
+        <div class="step-card"><div class="step-number">6</div><strong>Move upward</strong><br>Until strain or crack</div>
+        <div class="step-card"><div class="step-number">7</div><strong>Record & repeat</strong><br>Confirm consistency</div>
+      </div>
+      <p>Following these steps ensures your results reflect your real vocal ability instead of temporary vocal conditions.</p>
+    </div>
+
+    <!-- Understanding Vocal Range Results + Table -->
+    <div class="pro-card" id="vocal-types">
+      <h2 class="section-title">Understanding Your Vocal Range Results</h2>
+      <p>Once you complete your free voice range test, you will receive a set of notes that define your singing range. This range shows where your voice naturally performs best. Based on your results, you can also identify your vocal type. These types are generally divided into categories based on pitch and tone. Each voice type has its own strength and musical style.</p>
+      
+      <table class="vocal-table">
+        <thead>
+          <tr><th>Vocal Type</th><th>Range Level</th><th>Voice Quality</th><th>Best Music Style</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Soprano</td><td>High</td><td>Bright, light, and clear</td><td>Pop, classical, high melodies</td></tr>
+          <tr><td>Alto</td><td>Medium-low</td><td>Warm, smooth, and emotional</td><td>Jazz, soul, soft music</td></tr>
+          <tr><td>Tenor</td><td>High (male)</td><td>Strong, expressive, and bright</td><td>Pop, rock, modern songs</td></tr>
+          <tr><td>Baritone</td><td>Medium</td><td>Rich, balanced, and flexible</td><td>Mixed genres</td></tr>
+          <tr><td>Bass</td><td>Low</td><td>Deep, powerful, and heavy</td><td>Classical, opera, deep vocals</td></tr>
+        </tbody>
+      </table>
+      <p>This table helps you understand where your voice naturally fits after testing.</p>
+    </div>
+
+    <!-- Common Mistakes + Tips to Improve + SECOND LINK -->
+    <div class="pro-card" id="improve">
+      <h2 class="section-title">Common Mistakes & How to Improve Your Voice</h2>
+      <p>Many beginners make mistakes that affect the accuracy of their results. One of the most common mistakes is forcing the voice beyond comfort level. This can lead to incorrect results and even vocal strain. Another mistake is skipping warm-ups — a cold voice cannot perform at its full potential, which may reduce your actual range during the test.</p>
+      
+      <div class="badge-flex">
+        <span class="mistake-badge"><i class="fas fa-exclamation-triangle"></i> Forcing beyond comfort</span>
+        <span class="mistake-badge"><i class="fas fa-snowplow"></i> Skipping warm-ups</span>
+        <span class="mistake-badge"><i class="fas fa-lungs"></i> Poor breathing technique</span>
+        <span class="mistake-badge"><i class="fas fa-chart-simple"></i> Testing only once</span>
+      </div>
+
+      <h3 class="subheading">Tips to Improve Your Voice After Testing</h3>
+      <ul>
+        <li>Daily vocal exercises help strengthen your voice and improve flexibility.</li>
+        <li>Breathing control is essential for stable and controlled singing.</li>
+        <li>Stay hydrated to keep your vocal cords healthy and responsive.</li>
+        <li>Avoid shouting or overusing your voice, as this can cause strain.</li>
+        <li>Gradual practice is the key — slowly train your voice to handle new notes over time.</li>
+        <li>Vocal scales and structured exercises are especially effective for expanding your range safely.</li>
+      </ul>
+      <p>After you test your voice range free, the next step is improvement. Expanding your vocal range takes time, but with the right habits, it is completely possible.</p>
+      
+      <!-- SECOND LINK: relevant anchor text, no generic button -->
+      <div class="second-link-module">
+        <span class="second-link-text"><i class="fas fa-chart-simple"></i> For deeper vocal analytics & professional mapping:</span>
+        <a href="https://vocal-range-checker.onrender.com" target="_blank" rel="noopener noreferrer" class="second-anchor">Advanced Vocal Range Checker →</a>
+      </div>
+    </div>
+
+    <!-- Benefits & Signs of Accuracy -->
+    <div class="pro-card">
+      <h2 class="section-title">Benefits of Free Voice Range Testing</h2>
+      <div class="badge-flex">
+        <span class="benefit-badge"><i class="fas fa-bolt"></i> Understand natural voice</span>
+        <span class="benefit-badge"><i class="fas fa-chart-line"></i> Build confidence</span>
+        <span class="benefit-badge"><i class="fas fa-mobile-alt"></i> Improve learning speed</span>
+        <span class="benefit-badge"><i class="fas fa-heartbeat"></i> Protect vocal health</span>
+      </div>
+      <p>A free voice range test offers many advantages for singers at every level. It helps you understand your natural voice and choose songs that match your ability. This instantly improves your singing quality. It builds confidence because you stop guessing and start singing with clarity. When you know your range, you feel more in control. It also improves learning speed by helping you focus only on useful vocal exercises.</p>
+      
+      <h3 class="subheading">Signs of an Accurate Voice Range Result</h3>
+      <p>You will know your test results are accurate when your voice feels comfortable throughout the entire range. There should be no strain, pain, or instability. Your tone should remain consistent from low to high notes. If any note feels forced or uncomfortable, it is likely outside your natural range. Confidence is another sign — when you sing within your true range, your voice feels smooth, natural, and expressive.</p>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="pro-card" style="background: linear-gradient(115deg, #FFFFFF, #FEF7EF);">
+      <h2 class="section-title">Conclusion</h2>
+      <p>To test your voice range free is one of the smartest steps any singer can take. It gives you a clear understanding of your natural vocal ability, helps you choose better songs, and improves your overall singing performance. Instead of guessing or struggling with unsuitable notes, you gain real knowledge about your voice.</p>
+      <p>With consistent practice and proper technique, your vocal range can even expand over time. Your voice is unique and powerful. Once you understand it through a free voice range test, you unlock the ability to sing with more confidence, control, and creativity than ever before.</p>
+      <div style="margin-top: 36px; text-align: center; background: #F9F0E6; padding: 24px; border-radius: 42px;"><i class="fas fa-music"></i> Begin your vocal journey today — your true voice is waiting.</div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h3>VoiceRangeFree</h3>
+      <p style="max-width: 280px; margin-top: 12px;">Discover your authentic singing voice with professional free online tools & vocal analytics.</p>
+    </div>
+    <div class="footer-links-group">
+      <div>
+        <a href="#what-is">What Is It</a>
+        <a href="#guide">Guide</a>
+        <a href="#vocal-types">Vocal Types</a>
+        <a href="#improve">Test Free</a>
+      </div>
+      <div>
+        <a href="https://vocalrangetest.com/" target="_blank">Free Voice Test</a>
+        <a href="https://vocal-range-checker.onrender.com" target="_blank">Advanced Checker</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>© 2026 VoiceRangeFree — Empowering singers worldwide. Free vocal insights based on scientific methods.</p>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll for internal anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === "#" || targetId === "") return;
+      const targetElem = document.querySelector(targetId);
+      if (targetElem) {
+        e.preventDefault();
+        targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
